@@ -1,0 +1,25 @@
+/*
+1.Specified Operations Results
+
+Write a C# Sharp program to print the results of the specified operations.
+Test data:
+
+-1 + 4 * 6
+( 35+ 5 ) % 7
+14 + -4 * 6 / 11
+2 + 15 / 6 * 1 - 7 % 2
+Expected Output:
+23
+5
+12
+3
+  */
+/*
+2. Print Age Message
+
+Write a C# Sharp program that takes an age (for example 20) as input and prints something like "You look older than 20".
+Test Data:
+Enter your age - 25
+Expected Output:
+You look older than 25
+*/
