@@ -1,5 +1,20 @@
 /*
-1.Specified Operations Results
+1. Swap Two Numbers
+
+Write a C# Sharp program to swap two numbers.
+Test Data:
+Input the First Number : 5
+Input the Second Number : 6
+Expected Output:
+After Swapping :
+First Number : 6
+Second Number : 5
+*/
+
+
+
+/*
+2.Specified Operations Results
 
 Write a C# Sharp program to print the results of the specified operations.
 Test data:
@@ -15,7 +30,7 @@ Expected Output:
 3
   */
 /*
-2. Print Age Message
+3. Print Age Message
 
 Write a C# Sharp program that takes an age (for example 20) as input and prints something like "You look older than 20".
 Test Data:
