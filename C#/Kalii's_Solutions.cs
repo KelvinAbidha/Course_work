@@ -5,7 +5,8 @@ public class Exercise5
     public static void Main(string[] args)
     {
         int number1, number2, temp;
-
+// temp(temporary variable stores value of one of the variables you are swapping)
+        
         Console.Write("\nInput the First Number : ");
         // Using TryParse instead of Parse - if conversion fails, number1 will be 0
         int.TryParse(Console.ReadLine(), out number1);
