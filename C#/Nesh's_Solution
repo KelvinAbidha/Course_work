@@ -24,6 +24,7 @@ class Program
 }
 
 
+
 // number 2 //
 
 class Program
@@ -42,7 +43,19 @@ class Program
     }
 }
 
+
+
 // number 3 //
+
+class program
+{
+    static void Main(string[] args)
+    {
+        Console.WriteLine("Enter your age");
+        int age = int.Parse(Console.ReadLine());
+        Console.WriteLine("You look older than : " + age);
+    }
+}
 
 
 
