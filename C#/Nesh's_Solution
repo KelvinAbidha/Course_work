@@ -1,1 +1,23 @@
 
+class Program
+{
+    static void SwapWithTwo(ref int a, ref int b)
+    {
+        (a, b) = (b, a);
+    }
+    static void Main(string[] args)
+    {
+        Console.WriteLine("enter your first number: ");
+        int num1 = int.Parse(Console.ReadLine());
+
+        Console.WriteLine("enter your second number");
+        int num2 = int.Parse(Console.ReadLine());
+
+        Console.WriteLine("before swapping: " + num1 + " and " + num2);
+
+        SwapWithTwo(ref num1, ref num2);
+
+        Console.WriteLine("after swapping: " + num1 + " and " + num2);
+        
+    }
+}
