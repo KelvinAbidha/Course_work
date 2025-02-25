@@ -24,6 +24,6 @@ public class Exercise5
         Console.Write("\nFirst Number : " + number1);
         Console.Write("\nSecond Number : " + number2);
 
-        Console.Read();
+        Console.Read();  // Keeping the console window open until a key is pressed
     }
 }
