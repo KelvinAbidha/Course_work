@@ -41,3 +41,16 @@ class Arithmatics
 
     }
 }
+
+*/Question 3:
+using System;
+class Age
+{
+    static void Main()
+    {
+        Console.Write("Kindly input your age: ");
+        int age = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine($"You look older than {age}!");
+    }
+}
+
