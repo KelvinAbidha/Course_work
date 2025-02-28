@@ -1,0 +1,5 @@
+1.Basic Implementation:
+Write a Python function to find the maximum and second maximum from a list of n integers using a simple iteration approach.
+
+2.Optimized Approach:
+Implement an optimized version of the max-next max problem using a balanced tournament-style approach.
