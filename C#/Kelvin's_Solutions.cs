@@ -22,18 +22,7 @@ public class Exercise5
         Console.Write("\nSecond Number : " + number2); 
     }
 }
-//Exercise 3 
-using System;
 
-public class HelloWorld
-{
-    public static void Main(string[] args)
-    {
-        Console.WriteLine ("Enter age");
-        int age = Convert.ToInt32(Console.ReadLine());
-        Console.WriteLine($"You look older than{age}");
-    }
-}
 using System;
 
 public class HelloWorld
@@ -44,5 +33,17 @@ public class HelloWorld
         System.Console.WriteLine((35+ 5 ) % 7);
         System.Console.WriteLine(14 + -4 * 6 / 11);
         System.Console.WriteLine(2 + 15 / 6 * 1 - 7 % 2);
+    }
+}
+//Exercise 3
+using System;
+
+public class HelloWorld
+{
+    public static void Main(string[] args)
+    {
+        Console.WriteLine ("Enter age");
+        int age = Convert.ToInt32(Console.ReadLine());//Can also use age = int.Parse(Console.ReadLine());
+        Console.WriteLine($"You look older than{age}");
     }
 }
