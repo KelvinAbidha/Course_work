@@ -1,0 +1,31 @@
+Write the following codes, the find the outputs:
+Question 1///
+import numpy as np
+arr = np.array([1,2,3,4])
+print(arr[2] + [3])
+
+Question 2///
+import numpy as np
+arr = np.array([1,2,3,4,5],[6,7,8,9,10])
+print(arr[0,4]
+
+Question 3///
+import numpy as np
+arr = np.array([[[1,2,3],[4,5,6],[7,8,9],[10,11,12]]])
+print(arr[0,1,2])
+
+Quetion 4///
+import numpy as np
+arr = np.array([1,2,3,4,5,6,7])
+print(arr[::2])
+
+Question 5///
+import numpy as np
+arr = np.array([1,2,3,4,5,6,7,8,9,10,11,12])
+newarr = arr.reshape(2,3,2)
+print(newarr)
+
+Question 6///
+import numpy as np
+arr = np.array(['banana','cherry','apple'])
+print(np.sort(arr))
