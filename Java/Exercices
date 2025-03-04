@@ -4,7 +4,7 @@ Write a Java program to print 'Hello' on screen and your name on a separate line
 Expected Output :
 Hello
 Alexandra Abramov
-
+------------------------------------------------------------------------------------------------------------------------
 2. Swap Two Numbers
 
 Write a Java program to swap two numbers.
@@ -15,3 +15,31 @@ Expected Output:
 After Swapping :
 First Number : 6
 Second Number : 5
+------------------------------------------------------------------------------------------------------------------------
+3. Product of Two Numbers
+
+Write a Java program that takes two numbers as input and displays the product of two numbers.
+Test Data:
+Input first number: 25
+Input second number: 5
+Expected Output :
+25 x 5 = 125
+------------------------------------------------------------------------------------------------------------------------
+4. Display First 10 Natural Numbers
+
+Write a Java program to display the first 10 natural numbers.
+
+Expected Output :
+
+The first 10 natural numbers are:                                                
+                                                                                 
+1                                                                                
+2                                                                                
+3                                                                                
+4                                                                                
+5                                                                                
+6                                                                                
+7                                                                                
+8                                                                                
+9                                                                                
+10
