@@ -43,3 +43,15 @@ The first 10 natural numbers are:
 8                                                                                
 9                                                                                
 10
+------------------------------------------------------------------------------------------------------------------------
+5. Write a Java program to create a class called "Person" with a name and age attribute. Create two instances of the "Person" class, set their attributes using the constructor, and print their name and age.
+------------------------------------------------------------------------------------------------------------------------
+6. Write a Java program to create a class called "Dog" with a name and breed attribute. Create two instances of the "Dog" class, set their attributes using the constructor and modify the attributes using the setter methods and print the updated values.
+------------------------------------------------------------------------------------------------------------------------
+7. Write a Java program to create a class called Animal with a method called makeSound(). Create a subclass called Cat that overrides the makeSound() method to bark.
+------------------------------------------------------------------------------------------------------------------------
+8. Write a Java program to create a class called Shape with a method called getArea(). Create a subclass called Rectangle that overrides the getArea() method to calculate the area of a rectangle.
+------------------------------------------------------------------------------------------------------------------------
+9. A class Smartphone needs features of both Camera and MusicPlayer, but Java does not allow multiple class inheritance. Use interfaces to solve this problem
+------------------------------------------------------------------------------------------------------------------------
+10.A system needs to manage different types of employees (Fulltime and part-time), but their salary calculations are different. Apply interface concept to solve this problem
