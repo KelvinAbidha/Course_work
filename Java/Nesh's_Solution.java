@@ -106,6 +106,36 @@ public class Main {
 }
 
 Question 7///
+    import javax.xml.catalog.Catalog;
+
+class Animal{
+    public void makesSound(){
+        System.out.println("Animal makes sound");
+    }
+}
+class cat extends Animal{
+    public void makesSound(){
+        System.out.println("The cat barks");
+    }
+}
+class main{
+    public static void main(String[]args){
+        Animal animal=new Animal();
+        System.out.println("Animal sound:");
+        animal.makesSound();
+
+        cat cat=new cat();
+        System.out.println("Cat sound:");
+        cat.makesSound();
+
+        System.out.println("\nDemonstrating polymorphism:");
+        Animal polymorphicCat = new cat();
+        polymorphicCat.makesSound();
+    }
+}
+
+Question 8///
+    
     
     
     
