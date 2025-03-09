@@ -5,5 +5,31 @@ Question 1///
         System.out.println("My name is Nesh");}
 }
 Question 2///
+    import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        // Get input from user
+        System.out.print("Input the First Number : ");
+        int firstNumber = scanner.nextInt();
+        System.out.print("Input the Second Number : ");
+        int secondNumber = scanner.nextInt();
+        // Display numbers before swapping
+        System.out.println("\nBefore swapping:");
+        System.out.println("First number = " + firstNumber);
+        System.out.println("Second number = " + secondNumber);
+        // Swap numbers using a temporary variable
+        int temp = firstNumber;
+        firstNumber = secondNumber;
+        secondNumber = temp;
+        // Display numbers after swapping
+        System.out.println("\nAfter swapping:");
+        System.out.println("First number = " + firstNumber);
+        System.out.println("Second number = " + secondNumber);
+        scanner.close();
+    }
+}
+
+Question 3///
     
     
