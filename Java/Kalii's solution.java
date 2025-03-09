@@ -15,9 +15,6 @@ class Main {
 
 // Question 2
 // Java program to Swap
-// Two variables
-
-// Driver Class
 public class SWAP {
     // main function
     public static void main(String[] args)
@@ -28,8 +25,7 @@ public class SWAP {
         System.out.println("x = " + x);
         System.out.println("y = " + y);
 
-        // Swapping using three
-        // Variables
+        // Swapping using three Variables
         int temp = x;
         x = y;
         y = temp;
