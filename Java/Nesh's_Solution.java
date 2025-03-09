@@ -55,4 +55,26 @@ public class Main{
 }
      
 Question 4///
+    class person{
+    private String name;
+    private int age;
+
+    public person(String name, int age){
+        this.name=name;
+        this.age=age;
+    }
+    public String getName() {return name;}
+    public int getAge(){return age;}
+}
+public class Main {
+    public static void main(String[]args){
+        person person1=new person("John", 25);
+        person person2=new person("Nesh",21);
+        System.out.println("Person 1: Name = " + person1.getName() + ", Age = " + person1.getAge());
+        System.out.println("Person 2: Name = " + person2.getName() + ", Age = " + person2.getAge());
+    }
+}
+
+Question 5///
+    
     
