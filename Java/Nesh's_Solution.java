@@ -76,5 +76,36 @@ public class Main {
 }
 
 Question 6///
+    class dog{
+    private String breed;
+    private int age;
+
+    public dog(String breed, int age){
+        this.breed=breed;
+        this.age=age;
+    }
+    public String getName() {return breed;}
+    public int getAge(){return age;}
+
+    public void setBreed(String breed) {this.breed = breed;}
+
+    public void setAge(int age) {this.age = age;}
+}
+public class Main {
+    public static void main(String[]args){
+        dog dog1=new dog("labrador", 5);
+        System.out.println("Initial values:");
+        System.out.println("Dog : Breed = " + dog1.getName() + ", Age = " + dog1.getAge());
+
+        dog1.setBreed("Golden retriever");
+        dog1.setAge(4);
+
+        System.out.println("After setter methods:");
+        System.out.println("Dog : Breed = " + dog1.getName() + ", Age = " + dog1.getAge());
+    }
+}
+
+Question 7///
+    
     
     
