@@ -54,7 +54,7 @@ public class Main{
     }  
 }
      
-Question 4///
+Question 5///
     class person{
     private String name;
     private int age;
@@ -75,6 +75,6 @@ public class Main {
     }
 }
 
-Question 5///
+Question 6///
     
     
