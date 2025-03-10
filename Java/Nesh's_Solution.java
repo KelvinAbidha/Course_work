@@ -135,6 +135,28 @@ class main{
 }
 
 Question 8///
+    ///Write a Java program to create a class called Shape with a method called getArea(). Create a subclass called Rectangle that overrides the getArea() method to calculate the area of a rectangle.
+class Shape{
+    public void getArea(){System.out.println(("Calculates area of the Shape"));}
+}
+class Rectangle extends Shape{
+    @Override
+    public void getArea() {System.out.println("Calculates area of the area of Rectangle");}
+}
+class Main {
+    public static void main(String[] args) {
+        Shape shape = new Shape();
+        System.out.println("This: ");
+        shape.getArea();
+
+        Rectangle rectangle = new Rectangle();
+        System.out.println("This: ");
+        rectangle.getArea();
+    }
+}
+
+Question 9///
+    
     
     
     
