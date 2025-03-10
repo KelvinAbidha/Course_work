@@ -218,6 +218,73 @@ public class Main {
         phone.stopMusic();
     }
 }
+Question 10///
+//A system needs to manage different types of employees (Full-time and part-time), but their salary calculations are different. Apply interface concept to solve this problem/
+interface partTimeEmployee{
+    public double calculateSalary();
+    public void displayInfo();
+}
+interface fullTimeEmployee{
+    public double calculateSalary();
+    public void displayInfo();
+}
+class employee implements partTimeEmployee,fullTimeEmployee {
+    private String Name;
+    private int age;
+    private boolean isFullTime;
+    //fullTime
+    private double Salary;
+    //constructor for fullTime
+    public employee(String Name,int age,double Salary){
+        this.Name=Name;
+        this.age=age;
+        this.Salary=Salary;
+        this.isFullTime=true;
+    }
+    //constructor for partTime
+    public employee(String Name,int age){
+        this.Name=Name;
+        this.age=age;
+        this.Salary=Salary;
+        this.isFullTime =false;
+    }
+    //return salaries
+    @Override
+    public double calculateSalary() {
+        if(isFullTime){
+        return Salary;}
+     else {
+        return Salary;}}
+    // Display employee information
+    public void displayInfo() {
+        System.out.println("Employee: " + Name);
+        System.out.println("Age: " + age);
+        if (isFullTime) {
+            System.out.println("Type: Full-time");
+            System.out.println("Monthly Salary: $" + Salary);
+        } else {
+            System.out.println("Type: Part-time");
+            System.out.println("Regular Salary: $" + Salary);
+        }
+    }
+    // Getter for Name
+    public String getName() {
+        return Name;}
+}
+public class Main {
+    public static void main(String[] args) {
+        // Create full-time employee
+        employee fullTime = new employee("John Son", 30, 5000.0);
+        // Create part-time employee
+        employee partTime = new employee("Sarah Wilson", 25, 3000.0);
+        // Display employee information
+        System.out.println("EMPLOYEE DETAILS:");
+        System.out.println("=================");
+        fullTime.displayInfo();
+        System.out.println("-----------------");
+        partTime.displayInfo();
+    }
+}
 
     
     
