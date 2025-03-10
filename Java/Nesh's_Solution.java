@@ -156,6 +156,69 @@ class Main {
 }
 
 Question 9///
+    interface Camera {
+    public void takePhoto();
+    public void recordVideo(int duration);
+}
+    interface MusicPlayer {
+    public void playMusic(String trackName);
+    public void stopMusic();
+}
+class Smartphone implements Camera, MusicPlayer {
+    private String model;
+    private boolean isPlayingMusic;
+    private String currentTrack;
+    // Constructor for smartphone
+    public Smartphone(String model) {
+        this.model = model;
+        this.isPlayingMusic = false;
+        this.currentTrack = null;
+    }
+    // Implement the camera interface methods
+    @Override
+    public void takePhoto() {
+        System.out.println(model + " is taking a photo");
+    }
+    @Override
+    public void recordVideo(int duration) {
+        System.out.println(model + " is recording a video for " + duration + " seconds");
+    }
+    // Implement the MusicPlayer interface methods
+    @Override
+    public void playMusic(String trackName) {
+        this.currentTrack = trackName;
+        this.isPlayingMusic = true;
+        System.out.println(model + " is now playing: " + trackName);
+    }
+    @Override
+    public void stopMusic() {
+        if (isPlayingMusic) {
+            System.out.println(model + " stopped playing: " + currentTrack);
+            this.isPlayingMusic = false;
+            this.currentTrack = null;} else {
+            System.out.println("No music is currently playing on " + model);}
+    }
+    // Get Model of Smartphone
+    public String getModel() {
+        return model;
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+        Smartphone phone = new Smartphone("Samsung");
+        //using camera functionality
+        System.out.println("Testing Camera functionality:");
+        phone.takePhoto();
+        phone.recordVideo(30);
+        // Use MusicPlayer functionality
+        System.out.println("\nTesting MusicPlayer functionality:");
+        phone.playMusic("Bohemian Rhapsody");
+        phone.stopMusic();
+        // Try stopping music when none is playing
+        phone.stopMusic();
+    }
+}
+
     
     
     
