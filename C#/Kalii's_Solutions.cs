@@ -62,7 +62,7 @@ class GameProgram
     static void Main()
     {
         int totalScore = 0;
-        Random rand = new Random();
+        Random rand = new Random(); // Choose to set  secret num as random variable,keeps it interesting its a game after all 
         int secretNumber = rand.Next(2, 10); // Generates a random secret number between 2 and 9
 
         Console.WriteLine($"(Secret number has been randomly chosen!)");
@@ -82,7 +82,7 @@ class GameProgram
                 totalScore += 1; // Draw
                 Console.WriteLine("Draw! +1 point, one on one my guy niko na wewe HAHAHA..");
             }
-            else if (remainder % 2 == 0)
+            else if (remainder % 2 == 0) // Being divisble by 2 without reminder makes it even
             {
                 totalScore += 3; // Win
                 Console.WriteLine("Win! +3 points");
