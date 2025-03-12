@@ -106,7 +106,8 @@ class GameProgram
 QN2.//Nested loops :Nested loops are those loops that are present inside another loop. 
     // For this question i found 2 ways to do it :
     /*a) Since number of rows and columns are equal(6) u assign it to a single variable
-    e.g in my code "size" set to 6/*
+    e.g in my code "size" set to 6. If u look closely diagonally notice & , Kwa code cheki when 
+    "j=i" when index of row and column are the same ndo" &" when not the same" *"/*
     using System;
 
 class PatternProgram
