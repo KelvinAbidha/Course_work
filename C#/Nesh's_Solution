@@ -151,7 +151,56 @@ class Program
 
 
 Question 6///
+using System;
 
+class Program
+{
+    static void Main()
+    {
+        Console.WriteLine("Welcome to the Credit Evaluation System!");
+
+        // Ask for the number of customers
+        Console.Write("Enter the number of customers: ");
+        int n = int.Parse(Console.ReadLine());
+
+        for (int i = 1; i <= n; i++)
+        {
+            Console.WriteLine($"\nProcessing Customer {i}:");
+
+            // Read credit limit
+            Console.Write("Enter your credit limit: ");
+            double creditLimit = double.Parse(Console.ReadLine());
+
+            // Read item price
+            Console.Write("Enter the price of the item: ");
+            double price = double.Parse(Console.ReadLine());
+
+            // Read item quantity
+            Console.Write("Enter the quantity of the item: ");
+            int quantity = int.Parse(Console.ReadLine());
+
+            // Calculate total value of goods
+            double totalValue = price * quantity;
+
+            // Check if the total value exceeds the credit limit
+            while (totalValue > creditLimit)
+            {
+                Console.WriteLine("Sorry, you cannot purchase goods worth such a value on credit.");
+                Console.Write("Please re-enter the quantity: ");
+                quantity = int.Parse(Console.ReadLine());
+                totalValue = price * quantity; // Recalculate total value
+            }
+
+            // If the total value is within the credit limit
+            Console.WriteLine("Thank you for purchasing from us!");
+            Console.WriteLine($"Total purchase value: {totalValue:C}\n");
+        }
+
+        Console.WriteLine("All customers processed. Thank you for using the Credit Evaluation System!");
+    }
+}
+
+Question 7///
 
 
 
