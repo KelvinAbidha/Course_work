@@ -217,3 +217,133 @@ class CreditCheck
         }
     }
 }
+
+// QN 4 Area of shapes 
+using System;
+    class Program
+{
+   static void Main()
+    {
+        const int maxattempts = 3;
+        int attempts = 0;
+        bool validChoice = false;
+
+        while (attempts < maxattempts && !validChoice)
+        {
+            Console.WriteLine("Choose shape u want to get area of :");
+            Console.WriteLine("1.Triangle");
+            Console.WriteLine("2. Rectangle");
+            Console.WriteLine("3.Circle ");
+            string choice = Console.ReadLine();
+
+            switch (choice)
+            {
+                case "1":
+                    validChoice = true;
+                    Console.WriteLine("Enter base of the triangle:");
+                    double tribase = Convert.ToDouble(Console.ReadLine());
+
+                    Console.WriteLine("Enter height of the triangle:");
+                    double triheight = Convert.ToDouble(Console.ReadLine());
+
+                    double areatri = tribase * triheight * 0.5;
+                    Console.WriteLine("The area of the Trianagle is :" + areatri);
+                    break;
+
+                case "2":
+                    validChoice = true;
+                    Console.WriteLine("Enter lenghth of the rectangle: ");
+                    double rectLength = Convert.ToDouble(Console.ReadLine());
+
+                    Console.WriteLine("Enter width of the rectangle: ");
+                    double rectWidth = Convert.ToDouble(Console.ReadLine());
+
+                    double areaRect = rectLength * rectWidth;
+                    Console.WriteLine("Area of the Rectangle is : " + areaRect);
+                    break;
+
+                case "3":
+                    validChoice = true;
+                    Console.WriteLine("Enter radius of the circle: ");
+                    double radiCircle = Convert.ToDouble(Console.ReadLine());
+
+                    double areaCircle = Math.PI * radiCircle * radiCircle;
+                    Console.WriteLine("Area of the CIrcle is : " + areaCircle);
+                    break;
+
+                default:
+                    attempts++;
+                    Console.WriteLine("Invalid input." + (maxattempts - attempts) + " Attemps remaining ");
+                    if (maxattempts == attempts)
+                    {
+                        Console.WriteLine("NO attempts remaining , Existing the program");
+                    }
+                    break;
+
+            }
+        }
+    }
+}
+
+//QN.5 Array, list and output 
+
+using System;
+using System.Collections.Generic;
+
+class SalesDetails
+{
+    static void Main()
+    {
+        int itemCount = 5;
+        List<string> salesmen = new List<string>();
+        List<int[]> salesData = new List<int[]>();
+        List<int> totalSales = new List<int>();
+        int grandTotal = 0;
+
+        while (true)
+        {
+            Console.WriteLine("Enter salespersons name /or type no to stop:");
+            string name = Console.ReadLine();
+
+            if (name.ToLower() == "no") break;
+
+            salesmen.Add(name);
+            int[] sales = new int[itemCount];
+            int total = 0;
+
+            for (int j = 0; j < itemCount; j++)
+            {
+                Console.Write($"Enter sales for {name} (Item N.O {j + 1}): ");
+                sales[j] = Convert.ToInt32(Console.ReadLine());
+                total += sales[j];
+
+            }
+
+            salesData.Add(sales);
+            totalSales.Add(total);
+            grandTotal += total;
+
+        }
+
+        Console.WriteLine("\nName\tItem1\tItem2\tItem3\tItem4\tItem5\tTotalSales");
+        Console.WriteLine("--------------------------------------------------------");
+
+        for (int s = 0; s < salesmen.Count; s++)
+        {
+            Console.Write($"{salesmen[s]}\t");  // Print name and stay on the same line
+
+            for (int j = 0; j < itemCount; j++)
+            {
+                Console.Write($"{salesData[s][j]}\t");  // Print sales data on the same line
+            }
+
+            Console.WriteLine($"{totalSales[s]}");  // Move to a new line after all sales are printed
+        }
+
+        // Print the final separator and grand total **outside the loop**
+        Console.WriteLine("--------------------------------------------------------");
+        Console.WriteLine($"GrandTotal\t{grandTotal}");
+
+
+    }
+}
