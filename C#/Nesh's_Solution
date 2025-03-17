@@ -23,8 +23,6 @@ class Program
     }
 }
 
-
-
 // number 2 //
 
 class Program
@@ -57,7 +55,71 @@ class program
     }
 }
 
+//Question 4//
+using System;
+class Program
+{
+    public static void Main(string[] args)
+    {
+        int totalScore = 0;
+        int rounds = 5;
+        int currentRound = 1;
+        Random random = new Random();  // Create a Random instance
+        Console.WriteLine($"Welcome to the game!!! You will play {rounds} rounds. I am Nesh AI");
+        
+        while (currentRound <= rounds)
+        {
+            // Generate a random secret number between 1 and 10 for each round
+            double secretNumber = random.Next(1, 11);  
 
+            Console.WriteLine($"Round {currentRound}: Enter a number:");
+            string userinput = Console.ReadLine();
+            double userNumber;
+
+            // Fixed the TryParse logic
+            if (double.TryParse(userinput, out userNumber))
+            {
+                Console.WriteLine($"Secret Number for this round: {secretNumber}"); // Display secret number for transparency
+
+                if (userNumber / secretNumber == 0)
+                {
+                    totalScore += 1;
+                    Console.WriteLine("It's a draw! You gained +1 points");
+                }
+                else if (userNumber / secretNumber % 2 == 0)
+                {
+                    totalScore += 3;
+                    Console.WriteLine("It's a win! You gained +3 points");
+                }
+                else
+                {
+                    totalScore -= 3;
+                    Console.WriteLine("It's a loss! You lost -3 points");
+                }
+                Console.WriteLine($"Current Score: {totalScore}");
+            }
+            else
+            {
+                Console.WriteLine("Invalid input, please enter a valid number.");
+            }
+
+            currentRound++;
+        }
+
+        Console.WriteLine($"Game Over! Your final score is: {totalScore}");
+
+        if (totalScore > 0)
+        {
+            Console.WriteLine("Congratulations!!! You win!");
+        }
+        else
+        {
+            Console.WriteLine("Sorry, you lose. Better luck next time. BYE. NESH AI");
+        }
+    }
+}
+
+//Question 5//
 
 
 
